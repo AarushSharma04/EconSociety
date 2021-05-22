@@ -593,6 +593,22 @@ nav a:hover::after {
     transition: .4s all ease;
 }
 
+.curriculum-card a {
+    padding: 10px;
+    background: white;
+    border-radius: 20px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+    box-shadow: var(--bs);
+    position: relative;
+}
+
+.curriculum-card a:hover {
+    transform: translateY(5px);
+}
+
+
 .curriculum-card:hover {
     transform: scale(1.05);
 }
@@ -640,6 +656,18 @@ nav a:hover::after {
     border-bottom: 2px solid rgb(var(--sec));
 }
 
+.event-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+
 .socials-grid {
     display: flex;
     justify-content: center;
@@ -648,6 +676,15 @@ nav a:hover::after {
     margin-top: 20px;
     text-align: center;
     overflow: hidden;
+}
+
+@media only screen and (max-width: 1200px) {
+    .event-grid {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
 }
 
 .socials-grid a {
